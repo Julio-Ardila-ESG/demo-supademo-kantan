@@ -12,18 +12,69 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 2rem;
+      background: #f5f5f7;
+      color: #222;
     }
     header {
       margin-bottom: 2rem;
     }
     .card {
       border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1.5rem;
-      max-width: 700px;
+      border-radius: 10px;
+      padding: 1.8rem;
+      max-width: 900px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
     }
     h1 {
       margin-top: 0;
+    }
+    h2 {
+      margin-top: 1.8rem;
+      margin-bottom: 0.6rem;
+      font-size: 1.3rem;
+    }
+    h3 {
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+      font-size: 1.1rem;
+    }
+    p {
+      line-height: 1.5;
+      margin-bottom: 0.9rem;
+    }
+    ul, ol {
+      margin: 0.2rem 0 0.9rem 1.4rem;
+    }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.5rem 0 1.2rem;
+      font-size: 0.9rem;
+    }
+    .pricing-table th,
+    .pricing-table td {
+      border: 1px solid #ddd;
+      padding: 0.6rem 0.7rem;
+      vertical-align: top;
+    }
+    .pricing-table th {
+      background: #eef2ff;
+      font-weight: bold;
+      text-align: left;
+    }
+    .note {
+      font-size: 0.85rem;
+      color: #555;
+      background: #f8fafc;
+      border-left: 3px solid #4f46e5;
+      padding: 0.6rem 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .divider {
+      border: 0;
+      border-top: 1px solid #e5e7eb;
+      margin: 1.5rem 0;
     }
   </style>
 </head>
@@ -39,134 +90,161 @@
   <section class="card">
     <h2>Contenido de ejemplo</h2>
     <p>
-      Para visualizar la demostración ubica el logo de kantan en la parte inferior derecha de la pantalla.
-      Allíe esta ubicador el botón flotante de Supademo (lanzacohetes) el cual permitirá que al usuario se le muestre una biblioteca con videos instructivos con
-     el paso a paso por cada uno de los modulos.
+      Para visualizar la demostración, ubique el logo de Kantan en la parte inferior derecha
+      de la pantalla. Allí está el botón flotante de Supademo (lanzacohetes), el cual
+      permite mostrar al usuario una biblioteca con videos y recorridos interactivos
+      con el paso a paso de cada uno de los módulos.
     </p>
     <p>
-      Por favor hacer clic en el logo de kantan y navega por las
-      demos que he configurado de prueba.
+      Por favor haga clic en el logo de Kantan y navegue por las demos que he
+      configurado de prueba.
     </p>
 
-    <p>  
+    <hr class="divider" />
 
-        
-        ## 1. ¿Qué es Supademo?
-        
-        Supademo es una plataforma SaaS para crear **demos de producto interactivas y guiadas** (tipo “paso a paso”) sin necesidad de código. Permite grabar un flujo dentro de una aplicación web o escritorio, y lo convierte automáticamente en un recorrido interactivo con textos, hotspots, capítulos y llamadas a la acción. ([Supademo][1])
-        
-        Se utiliza principalmente para:
-        
-        * **Ventas y marketing:** tours interactivos embebidos en página web o campañas.
-        * **Onboarding y formación:** guías paso a paso para nuevos usuarios.
-        * **Soporte y éxito del cliente:** tutoriales interactivos en lugar de artículos estáticos. ([Supademo][2])
-        
-        Entre sus capacidades clave están: edición con IA (textos, traducciones, voz en off), analítica de uso, personalización avanzada (variables dinámicas, branching), y un **Demo Hub in-app** como el que estás probando. ([Supademo][1])
-        
-        ---
-        
-        ## 2. Planes y precios (USD – facturación mensual)
-        
-        Fuente: página oficial de precios de Supademo (2025). ([Supademo][3])
-        Los valores pueden cambiar; se deben confirmar al momento de la compra.
-        
-        | Plan               | Precio                                        | Licencias incluidas                          | Enfoque principal                                                |
-        | ------------------ | --------------------------------------------- | -------------------------------------------- | ---------------------------------------------------------------- |
-        | **Starter (Free)** | **US$0 / mes**                                | 1 creador                                    | Pruebas y uso básico individual                                  |
-        | **Scale**          | **US$38 / mes por creador**                   | 1 creador + 5 lectores                       | Uso profesional con analítica y branding                         |
-        | **Growth**         | **US$350 / mes**                              | 5 creadores (creators) + lectores ilimitados | Escalamiento de demos HTML y sandbox a nivel equipo              |
-        | **Enterprise**     | **Precio personalizado (desde 10 creadores)** | 10+ creadores                                | Uso corporativo con SSO, múltiples workspaces y soporte dedicado |
-        
-        > Todos los planes pagos pueden probarse con **free trial de 14 días** y visualizaciones externas ilimitadas.
-        
-        ---
-        
-        ## 3. Principales características por plan
-        
-        ### 3.1 Starter (Free – US$0)
-        
-        * Hasta **5 Supademos** (demos interactivos).
-        * Editor intuitivo.
-        * Personalización básica de texto con IA.
-        * Compartir como **link, embed, video o PDF**.
-        * Demo Hub in-app.
-        * 1 creador. ([Supademo][3])
-        
-        Uso típico: evaluar la herramienta, crear primeros tutoriales y validar internamente.
-        
-        ---
-        
-        ### 3.2 Scale (US$38/mes por creador)
-        
-        Incluye todo lo de Starter, más: ([Supademo][3])
-        
-        * **Supademos ilimitados.**
-        * Enlaces trackeables y panel de **analytics**.
-        * **Branching** y variables dinámicas (rutas diferentes según elección del usuario).
-        * Custom branding: logo, colores, eliminación de watermark.
-        * Supademo AI (edición de textos, voz en off, traducción).
-        * 1 workspace de equipo, 5 colaboradores solo lectura.
-        * Integraciones con herramientas de marketing/ventas (HubSpot, Salesforce, GA, Slack, Zapier, etc.). ([Supademo][3])
-        
-        En la práctica, es el plan mínimo razonable para uso en ventas, marketing o customer success.
-        
-        ---
-        
-        ### 3.3 Growth (US$350/mes, 5 creadores incluidos)
-        
-        Además de lo anterior, añade: ([Supademo][3])
-        
-        * **HTML Supademos ilimitados** (clonado de interfaz para demos muy realistas).
-        * Edición de texto, imágenes y HTML de los demos.
-        * **Sandbox demos ilimitados** (entornos interactivos tipo “juega con el producto”).
-        * Onboarding y training “white-glove”.
-        * **AI voice cloning** y capacidades avanzadas de voz.
-        * Viewers ilimitados y 5 creadores incluidos (creadores adicionales ~US$50/mes).
-        
-        Orientado a equipos que quieren usar Supademo como pieza central de su estrategia de onboarding, ventas y academia de producto.
-        
-        ---
-        
-        ### 3.4 Enterprise (precio custom, desde 10 creadores)
-        
-        Suma a Growth: ([Supademo][3])
-        
-        * **SSO y SAML**, múltiples workspaces.
-        * Políticas de retención de datos personalizadas.
-        * Exportación de datos, soporte dedicado y canal privado.
-        * Onboarding y training ilimitados.
-        * Opciones avanzadas de residencia de datos.
-        
-        Pensado para empresas con requerimientos fuertes de seguridad, compliance y gobierno de datos.
-        
-        ---
-        
-        ## 4. Beneficios relevantes para la organización
-        
-        1. **Estandarización del discurso de producto**
-        
-           * Demos guiados que aseguran que todos los consultores/comerciales muestren el producto de la misma manera.
-        
-        2. **Escalabilidad en capacitación y soporte**
-        
-           * Un mismo Supademo se reutiliza en onboarding de clientes, base de conocimiento y campañas de marketing, reduciendo tiempo de preparación de workshops y sesiones 1-a-1.
-        
-        3. **Mejor experiencia del usuario final**
-        
-           * Interactividad, voz en off con IA, traducción a múltiples idiomas y navegación auto-guiada mejoran la comprensión del producto frente a PDFs o videos largos. ([Supademo][1])
-        
-        4. **Medición y optimización**
-        
-           * Analytics de vistas, engagement y rutas recorridas permiten identificar qué partes del producto generan más interés y dónde se pierde al usuario. ([Supademo][3])
-        
-        5. **Integración en la propia aplicación**
-        
-           * Mediante el Demo Hub embebido (script que ya estás usando), se pueden lanzar tours contextuales dentro del software, reforzando la adopción sin depender de capacitaciones externas.
-              
-        
-        Los precios están expresados en USD, son referenciales y deben reconfirmarse en el proceso formal de compra.      
-        
+    <!-- INFORME EJECUTIVO RESUMIDO DENTRO DE LA MISMA PÁGINA -->
+    <h2>1. ¿Qué es Supademo?</h2>
+    <p>
+      Supademo es una plataforma SaaS para crear <strong>demos de producto interactivas y guiadas</strong>
+      (tipo “paso a paso”) sin necesidad de código. Permite grabar un flujo dentro de una
+      aplicación web o escritorio y convertirlo en un recorrido interactivo con textos,
+      hotspots, capítulos y llamadas a la acción.
+    </p>
+    <p>Se utiliza principalmente para:</p>
+    <ul>
+      <li><strong>Ventas y marketing:</strong> tours interactivos embebidos en páginas web o campañas.</li>
+      <li><strong>Onboarding y formación:</strong> guías paso a paso para nuevos usuarios.</li>
+      <li><strong>Soporte y éxito del cliente:</strong> tutoriales interactivos en lugar de artículos estáticos.</li>
+    </ul>
+    <p>
+      Entre sus capacidades clave están: edición con IA (textos, traducciones, voz en off),
+      analítica de uso, personalización avanzada (variables dinámicas, branching) y un
+      <strong>Demo Hub in-app</strong> como el que se muestra en esta demo.
+    </p>
 
+    <h2>2. Planes y precios (USD – facturación mensual)</h2>
+    <p>
+      Información referencial basada en la página oficial de precios de Supademo (2025).
+      Los valores pueden cambiar y deben confirmarse en el proceso formal de compra.
+    </p>
+
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Precio</th>
+          <th>Licencias incluidas</th>
+          <th>Enfoque principal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Starter (Free)</strong></td>
+          <td><strong>US$0 / mes</strong></td>
+          <td>1 creador</td>
+          <td>Pruebas y uso básico individual</td>
+        </tr>
+        <tr>
+          <td><strong>Scale</strong></td>
+          <td><strong>US$38 / mes por creador</strong></td>
+          <td>1 creador + 5 lectores</td>
+          <td>Uso profesional con analítica y branding</td>
+        </tr>
+        <tr>
+          <td><strong>Growth</strong></td>
+          <td><strong>US$350 / mes</strong></td>
+          <td>5 creadores + lectores ilimitados</td>
+          <td>Escalamiento de demos HTML y sandbox a nivel de equipo</td>
+        </tr>
+        <tr>
+          <td><strong>Enterprise</strong></td>
+          <td><strong>Precio personalizado (desde 10 creadores)</strong></td>
+          <td>10+ creadores</td>
+          <td>Uso corporativo con SSO, múltiples workspaces y soporte dedicado</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      Todos los planes pagos pueden probarse con <strong>free trial de 14 días</strong>
+      y visualizaciones externas ilimitadas.
+    </div>
+
+    <h2>3. Principales características por plan</h2>
+
+    <h3>3.1 Starter (Free – US$0)</h3>
+    <ul>
+      <li>Hasta <strong>5 Supademos</strong> (demos interactivos).</li>
+      <li>Editor intuitivo.</li>
+      <li>Personalización básica de texto con IA.</li>
+      <li>Opciones de compartir como enlace, embed, video o PDF.</li>
+      <li>Demo Hub in-app.</li>
+    </ul>
+    <p>
+      Uso típico: evaluación inicial, creación de primeros tutoriales y validación
+      interna del enfoque.
+    </p>
+
+    <h3>3.2 Scale (US$38/mes por creador)</h3>
+    <ul>
+      <li>Supademos ilimitados.</li>
+      <li>Enlaces trackeables y panel de <strong>analytics</strong>.</li>
+      <li><strong>Branching</strong> y variables dinámicas para rutas diferentes según la elección del usuario.</li>
+      <li>Custom branding: logo, colores y eliminación de watermark.</li>
+      <li>Supademo AI (edición de texto, voz en off, traducción).</li>
+      <li>1 workspace de equipo y 5 colaboradores solo lectura.</li>
+      <li>Integraciones con HubSpot, Salesforce, Google Analytics, Slack, Zapier, etc.</li>
+    </ul>
+
+    <h3>3.3 Growth (US$350/mes, 5 creadores incluidos)</h3>
+    <ul>
+      <li><strong>HTML Supademos</strong> ilimitados (clonado de interfaz muy realista).</li>
+      <li>Edición avanzada de texto, imágenes y HTML de los demos.</li>
+      <li><strong>Sandbox demos</strong> ilimitados (entornos interactivos tipo “pruebe el producto”).</li>
+      <li>Onboarding y training “white-glove”.</li>
+      <li><strong>AI voice cloning</strong> y capacidades avanzadas de voz.</li>
+      <li>Viewers ilimitados y 5 creadores incluidos.</li>
+    </ul>
+
+    <h3>3.4 Enterprise (precio personalizado)</h3>
+    <ul>
+      <li>SSO y SAML, múltiples workspaces.</li>
+      <li>Políticas de retención de datos personalizadas.</li>
+      <li>Exportación de datos y soporte dedicado.</li>
+      <li>Onboarding y training ilimitados.</li>
+      <li>Opciones avanzadas de residencia de datos.</li>
+    </ul>
+
+    <h2>4. Beneficios para la organización</h2>
+    <ol>
+      <li>
+        <strong>Estandarización del discurso de producto:</strong>
+        todos los consultores muestran el software con el mismo flujo y mensajes clave.
+      </li>
+      <li>
+        <strong>Escalabilidad en capacitación y soporte:</strong>
+        los mismos Supademos se reutilizan para onboarding, base de conocimiento
+        y campañas comerciales, reduciendo tiempos de preparación.
+      </li>
+      <li>
+        <strong>Mejor experiencia del usuario final:</strong>
+        recorridos guiados, voz en off y traducción automática mejoran la comprensión
+        frente a documentos o videos extensos.
+      </li>
+      <li>
+        <strong>Medición y optimización:</strong>
+        analytics de vistas y engagement permiten identificar qué partes del producto
+        generan mayor interés.
+      </li>
+      <li>
+        <strong>Integración en la propia aplicación:</strong>
+        el Demo Hub embebido permite lanzar tours contextuales directamente desde Kantan.
+      </li>
+    </ol>
+
+    <p class="note">
+      Los precios están expresados en USD, son referenciales y deben reconfirmarse
+      en el proceso formal de compra.
     </p>
   </section>
 
@@ -177,4 +255,3 @@
   </script>
 </body>
 </html>
-
